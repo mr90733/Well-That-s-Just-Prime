@@ -26,7 +26,17 @@ int main()
             std::cout << ",";
     }
 
-    std::cout << "]";
+    std::cout << "]" << std::endl;
+
+    // Add-ons
+
+    std::cout << "Is Prime: " << Prime::isPrime(input) << std::endl;
+
+    std::cout << "Is Composite: " << Prime::isComposite(input) << std::endl;
+
+    std::cout << "Reduce 15/25: " << Prime::reduce(15, 25) << std::endl;
+
+    std::cout << "Reduce 36/12: " << Prime::reduce(36, 12) << std::endl;
 
     return 0;
 }
